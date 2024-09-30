@@ -1,0 +1,75 @@
+/*
+  Design: Meher Salim
+  File:   error404.component.css
+*/
+
+/* Error page container */
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Error container styling */
+.error-container {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Error code (404) styling */
+.error-code {
+  font-size: 8rem;
+  margin: 0;
+  color: #ff6b6b;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Error message styling */
+.error-message {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover animation */
+.home-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for the entire container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Bounce animation for the error code */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
